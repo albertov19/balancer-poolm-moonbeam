@@ -1,0 +1,21 @@
+{
+  "network": "moonbase",
+  "chainId": 1287,
+  "defaultPrecision": 2,
+  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer",
+  "alchemyWsUrl": "wss://wss.testnet.moonbeam.network",
+  "addresses": {
+    "bFactory": "0x7B1144AE2EDbC6bA7F33BAc98F2F2fC190eA8477",
+    "bActions": "0xee4eC322AfBE3EC9c88BbDe7116F9D82dD8A9dE2",
+    "dsProxyRegistry": "0x79C4218b575924D0ce3611C978613153acDCEAf2",
+    "proxy": "0x910A314Ea2d1d92055bE95DF6e32a66DC305ca1B",
+    "weth": "0x930B233d616c3Be70f274A679c37a08a1803c3D5",
+    "multicall": "0x1163ff0064ad9203E0a4D36e04bF12816154BdbB"
+  },
+  "connectors": {
+    "injected": {
+      "id": "injected",
+      "name": "MetaMask"
+    }
+  }
+}

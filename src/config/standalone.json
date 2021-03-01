@@ -1,0 +1,21 @@
+{
+  "network": "standalone",
+  "chainId": 1281,
+  "defaultPrecision": 2,
+  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer",
+  "alchemyWsUrl": "ws://127.0.0.1:9948",
+  "addresses": {
+    "bFactory": "0xC2Bf5F29a4384b1aB0C063e1c666f02121B6084a",
+    "bActions": "0xa6F8DEdA193Decf43E2a88173A59778722f39167",
+    "dsProxyRegistry": "0x3d1AF1F66Ee4800a1db87321C9B23ed971eEc2e2",
+    "proxy": "0xfE5D3c52F7ee9aa32a69b96Bfbb088Ba0bCd8EfC",
+    "weth": "0xBb0CC0fb3e0c06725c67167501f850B4900D6DB5",
+    "multicall": "0x92496871560a01551E1B4fD04540D7A519D5C19e"
+  },
+  "connectors": {
+    "injected": {
+      "id": "injected",
+      "name": "MetaMask"
+    }
+  }
+}
