@@ -21,7 +21,7 @@
         </div>
         <div class="mt-2" v-if="loading">
           Waiting for confirmations to protect from chain reorganizations:
-          {{ confirmations }}/10
+          {{ confirmations }}/2
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ export default {
         this.loading = false;
         return;
       }
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 2; i++) {
         await tx.wait(i);
         this.confirmations++;
       }
