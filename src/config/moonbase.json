@@ -2,15 +2,16 @@
   "network": "moonbase",
   "chainId": 1287,
   "defaultPrecision": 2,
-  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer",
+  "subgraphUrl": "https://api.staging.thegraph.com/subgraphs/name/mario-purestake/balancer-moonbase",
   "alchemyWsUrl": "wss://wss.testnet.moonbeam.network",
+  "exchangeUrl": "http://localhost:8080/",
   "addresses": {
-    "bFactory": "0x7B1144AE2EDbC6bA7F33BAc98F2F2fC190eA8477",
-    "bActions": "0xee4eC322AfBE3EC9c88BbDe7116F9D82dD8A9dE2",
-    "dsProxyRegistry": "0x79C4218b575924D0ce3611C978613153acDCEAf2",
-    "proxy": "0x910A314Ea2d1d92055bE95DF6e32a66DC305ca1B",
-    "weth": "0x930B233d616c3Be70f274A679c37a08a1803c3D5",
-    "multicall": "0x1163ff0064ad9203E0a4D36e04bF12816154BdbB"
+    "bFactory": "0x0bb1ac004BacefFb1fb1a4aA3f74835372A5deD0",
+    "bActions": "0x3D036b042642f5bA9164b99a375E4BC32Da844eA",
+    "dsProxyRegistry": "0x8f255087c773d3D0c4b1bB65d5619945d16fcd41",
+    "proxy": "0xC2551FC873a564e040e46D512f952686064c2aFe",
+    "weth": "0x20e2128fCe689c76B908bF515C00FcbD9A62C4BE",
+    "multicall": "0x480b974312dCbbA4B3Bb7c11277D4383fCd9723f"
   },
   "connectors": {
     "injected": {

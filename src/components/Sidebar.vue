@@ -9,6 +9,11 @@
       :items="items"
       class="flex-auto mb-4"
     />
+    <div class="p-4 border-top">
+      <a href="https://moonbase-balexchange.netlify.app/" class="eyebrow mb-4">
+        Exchange
+      </a>
+    </div>
     <FormWrapper class="p-4 border-top" />
     <div class="p-4 border-top">
       <div class="eyebrow mb-4">
@@ -18,7 +23,7 @@
         <div v-for="(balance, i) in balances" :key="i" class="d-flex mb-3">
           <Token :address="i" size="20" class="mr-2" />
           <div v-text="_ticker(i)" v-if="i !== 'ether'" class="flex-auto" />
-          <div v-else class="flex-auto">ETH</div>
+          <div v-else class="flex-auto">DEV</div>
           <div v-text="_num(formatBalance(balance, i))" />
         </div>
       </div>

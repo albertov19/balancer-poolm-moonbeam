@@ -172,18 +172,17 @@ export function getTokenBySymbol(symbol) {
 }
 
 export function getTokenLogoUrl(address: string): string | null {
-  let trustwalletId: string | null = null;
   if (address === 'ether') {
-    trustwalletId = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
+    return 'https://raw.githubusercontent.com/PureStake/moonbase-mintableERC20/main/mintableERC20-interface/public/logos/Black_Icon.svg';
   } else {
     const checksum = getAddress(address);
     const token = config.tokens[checksum];
     if (token && token.hasIcon) {
-      trustwalletId = checksum;
+      return token.logoUrl;
+    } else {
+      return null;
     }
   }
-  if (!trustwalletId) return null;
-  return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${trustwalletId}/logo.png`;
 }
 
 export function etherscanLink(str: string, type = 'address'): string {
