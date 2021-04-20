@@ -43,6 +43,9 @@
         >
           Connect wallet
         </UiButton>
+        <UiButton @click="btnClick" class="ml-2 hide-sm">
+          <span v-text="'Exchange'" class="ml-n1 mr-n1" />
+        </UiButton>
         <UiButton @click="modalAboutOpen = true" class="ml-2 hide-sm">
           <span v-text="'?'" class="ml-n1 mr-n1" />
         </UiButton>
@@ -87,6 +90,9 @@ export default {
       this.loading = true;
       await this.login(connector);
       this.loading = false;
+    },
+    btnClick() {
+      window.open('https://moonbase-balexchange.netlify.app/');
     }
   }
 };
